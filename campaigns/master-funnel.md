@@ -37,7 +37,7 @@ ONBOARDING → ENGAGEMENT → SALES → RETENTION → REACQUISITION
 
 | # | Campaign | Description | Impact |
 |---|----------|-------------|--------|
-| O1 | **Welcome + First Lesson Push** | Immediate after signup. Push to kid: "Welcome to GetXplain, {kid_name}! 🎉 Tap here to take your first lesson — pick any topic you love!" Deep link to Worlds browser. Parent gets welcome email explaining the app, what their kid can do, and how XP/streaks work. | 🔥🔥🔥🔥 |
+| O1 | **Welcome Email from Tarek** | Immediate after signup. Personal email from Tarek to parent: "Hi {parent_name}, I'm Tarek, the founder of GetXplain. Thank you for signing {kid_name} up — here's what they can do: generate AI lessons on any topic, explore 8 worlds, compete in challenges, and climb leaderboards. Their first lesson is one tap away." CTA deep links to Worlds browser. Sets tone: founder cares, real human behind the app. Kid gets push: "Welcome, {kid_name}! 🎉 Tap to start your first lesson!" | 🔥🔥🔥🔥 |
 | O2 | **Day 1 — First AI Generation Nudge** | 24h after signup, if lessons_generated_count = 0: push "You haven't created your own lesson yet! Type any topic, snap a photo, or use your voice — the AI builds a lesson just for you ✨" Introduces the core action. | 🔥🔥🔥🔥 |
 | O3 | **Day 2 — Streak Starter** | 48h after signup, if current_streak_days < 2: push "Come back today and start a streak! 🔥 Day 2 = the beginning of something big." If streak = 2: "2 days in a row! Keep going tomorrow for Day 3!" Introduces streak mechanic. | 🔥🔥🔥🔥 |
 | O4 | **Day 3 — World Explorer** | 72h after signup, if worlds_visited_count <= 1: push "You've only tried {world}! There are 8 worlds to explore — try {suggested_world} today. Kids your age love it 🌍" Broadens usage beyond first world. | 🔥🔥🔥 |
