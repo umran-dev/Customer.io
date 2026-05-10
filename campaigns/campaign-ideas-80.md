@@ -6,34 +6,41 @@
 
 ## Product Context (Sales)
 
-- **Freemium:** 2 kid profiles max, daily + weekly generation limits (resets like ChatGPT/AI models)
-- **Premium:** 8 kid profiles, higher/unlimited limits, exclusive features
-- **No trial** — conversion must happen through value demonstration, not time-gated trials
+| Feature | Freemium | Premium |
+|---------|----------|---------|
+| Kid Profiles | 2 max | 6 max |
+| Library Lessons (from Worlds) | 3/day | Unlimited |
+| AI Generation | 3/day | 12/day |
+| Squads | ❌ Locked | ✅ Full access |
+| Challenges | 2/day | Unlimited |
+
+- **No trial** — conversion through value demonstration, not time-gated
+- Limits reset daily
 
 ## A. SALES / SUBSCRIPTIONS (Goal: Convert free → paid)
 
 | # | Campaign Name | Description | Impact |
 |---|--------------|-------------|--------|
-| A1 | **Daily Limit Wall Capture** | When user hits daily generation limit, in-app + push: "You've used all your lessons for today. Premium members keep going — no daily cap." Targets proven demand at the exact moment of frustration. | 🔥🔥🔥🔥 |
-| A2 | **Weekly Limit Exhaustion Email** | When user burns through weekly limit by Wed/Thu: email to parent "{{kid_name}} used their entire weekly quota in {days} days. They clearly love learning — Premium removes all limits." Shows parent the kid's appetite. | 🔥🔥🔥🔥 |
-| A3 | **Parent Value Report → Upsell** | Monthly email to parent showing kid's stats (XP, lessons, streak, rank) + "{kid_name} hit their limit {limit_hit_count} times this month. Imagine what they'd learn without limits." Sells through proof. | 🔥🔥🔥🔥 |
-| A4 | **3rd Child Profile Wall** | Parent tries to create 3rd kid profile: "Your family is growing! Free accounts support 2 profiles. Upgrade to Premium for up to 8 — every child deserves to learn." Friction-point conversion. | 🔥🔥🔥🔥 |
-| A5 | **Sibling FOMO Trigger** | Parent with 2 profiles, both active: "Both {kid1} and {kid2} are learning every day. Got more kids? Premium supports up to 8 profiles — one account, whole family." Multi-child upsell. | 🔥🔥🔥🔥 |
-| A6 | **Streak Insurance Premium Feature** | When streak_at_risk = true, push: "Premium members get 1 free streak save per week. Never lose your streak again." Converts pain into purchase. | 🔥🔥🔥 |
-| A7 | **Leaderboard Ceiling Breaker** | Users stuck at rank 11-50 for 7+ days: "Premium members earn 2x XP weekends. Break into the top 10." Targets competitive kids who need more daily generation to climb. | 🔥🔥🔥 |
-| A8 | **Feature Gate Tap** | When user taps a premium-locked feature: in-app message "This is a Premium feature. Upgrade to unlock it — plus higher limits and 8 kid profiles." Contextual, zero waste. No trial, direct pitch. | 🔥🔥🔥🔥 |
-| A9 | **Back-to-School Annual Plan** | September campaign: "New school year, new skills. Premium for {kid_name} — unlimited learning, 8 profiles for the whole family, 40% off annual." Seasonal urgency. | 🔥🔥🔥 |
-| A10 | **Power Creator Upgrade Nudge** | Users who generated 50+ lessons but keep hitting limits: "You're in the top 1% of creators. Your limit resets shouldn't hold you back — Premium removes them all." | 🔥🔥🔥🔥 |
-| A11 | **Famous Creator Verification** | Users whose lessons are used by 20+ others: "Your lessons teach hundreds of kids. Premium creators get 'Verified Creator' badge + unlimited generation." Status + utility. | 🔥🔥🔥 |
-| A12 | **Challenge Winner Upgrade** | After winning 5+ challenges: "Champions deserve champion tools. Premium unlocks custom challenges + exclusive worlds + no limits." Reward momentum. | 🔥🔥 |
-| A13 | **Hard Mode Unlocker** | Users who complete 10+ Hard lessons: "You've mastered Hard mode. Premium unlocks Expert mode + unlimited daily generation for deep learners." Skill-driven. | 🔥🔥🔥 |
-| A14 | **Limit Hit + Weekend Pattern** | Users who hit limits on weekends consistently: "Every weekend you max out. Premium = no weekend cap. Let {kid_name} binge-learn all Saturday." Behavior-matched. | 🔥🔥🔥 |
-| A15 | **Social Proof Email** | Monthly to all free users: "{X} families in {country} upgraded this month. Most popular reasons: no daily limits + profiles for every child." FOMO + specifics. | 🔥🔥 |
-| A16 | **Milestone Unlock Paywall** | At 100/500/1000 XP milestones: "Congrats on {xp} XP! Premium members at your level unlock exclusive badges + higher limits to keep climbing." Celebrate then convert. | 🔥🔥🔥 |
-| A17 | **Tarek Personal Offer** | After 30 days active + still free: personal email from Tarek: "You're one of our most dedicated learners. I want to remove your limits — here's 30% off." One-time. | 🔥🔥🔥 |
-| A18 | **Abandoned Upgrade Retarget** | User viewed pricing page but didn't convert: 2h push "Still thinking? Premium families generate 3x more lessons and never hit a wall." Retarget intent. | 🔥🔥🔥🔥 |
-| A19 | **Exam Season Premium Push** | Before major exam periods (by country): "Exam season = no time for limits. Premium = unlimited lessons on any topic. Prepare smarter, {kid_name}." Time-sensitive. | 🔥🔥🔥 |
-| A20 | **Gifting Campaign (Ramadan/Eid/Holidays)** | Parent-targeted: "Gift unlimited learning this Eid — Premium for the whole family (up to 8 kids), 25% off." Cultural + seasonal + family angle. | 🔥🔥🔥 |
+| A1 | **AI Generation Limit Wall** | When user hits 3/day AI generation cap: push "You've used all 3 AI lessons today. Premium gives you 12 — that's 4x more creating power." Highest-intent moment. | 🔥🔥🔥🔥 |
+| A2 | **Library Lesson Cap Hit** | When user hits 3/day library lesson cap: push "3 library lessons done today! Premium = unlimited library access. Never stop learning." Second daily friction point. | 🔥🔥🔥🔥 |
+| A3 | **Parent Value Report → Upsell** | Monthly email to parent: "{kid_name}'s stats + hit limits {count} times this month. Premium: 12 AI generations, unlimited library, squads, unlimited challenges. Imagine what they'd do." | 🔥🔥🔥🔥 |
+| A4 | **3rd Child Profile Wall** | Parent tries to create 3rd kid profile: "Free accounts support 2 profiles. Premium fits up to 6 — every child deserves to learn." Friction-point conversion at exact moment. | 🔥🔥🔥🔥 |
+| A5 | **Sibling FOMO Trigger** | Parent with 2 profiles, both active: "Both {kid1} and {kid2} love GetXplain. Got more kids? Premium supports 6 profiles — one account, whole family." | 🔥🔥🔥🔥 |
+| A6 | **Squad Teaser** | When free user sees squad content or gets squad invite: "Squads are a Premium feature! Join friends, compete together, and climb the leaderboard as a team. Upgrade to unlock." Squads = social glue behind paywall. | 🔥🔥🔥🔥 |
+| A7 | **Squad Invite Rejection Conversion** | Free user receives squad invite but can't join: push "Your friend invited you to a squad! Squads are Premium-only. Upgrade to join them." Social pressure at peak. | 🔥🔥🔥🔥 |
+| A8 | **Challenge Limit Hit** | When user hits 2/day challenge cap: push "2 challenges done today — you want more! Premium = unlimited challenges every day." Competition-driven conversion. | 🔥🔥🔥 |
+| A9 | **Feature Gate Tap** | When user taps any premium-locked feature: in-app "This is Premium. Upgrade to unlock squads, 12 AI generations/day, unlimited library + challenges, and 6 kid profiles." Contextual. | 🔥🔥🔥🔥 |
+| A10 | **Power Creator Upgrade** | Users who hit AI gen limit 5+ times total: "You've been capped {count} times. That's {count × 9} lessons you never created. Premium = 12/day. Your brain wants more." Quantify the loss. | 🔥🔥🔥🔥 |
+| A11 | **Famous Creator Verification** | Lessons used by 20+ others: "You teach hundreds of kids — but 3/day limits you. Premium: 12 AI generations + Verified Creator badge." Status + utility. | 🔥🔥🔥 |
+| A12 | **Challenge Addict Conversion** | User hits challenge cap daily for 3+ days: "You love competing! Free = 2/day. Premium = unlimited. Never wait for your next battle." Pattern-based. | 🔥🔥🔥 |
+| A13 | **Triple Limit Day** | User hits AI gen + library + challenge limits all in one day: push "You maxed out EVERYTHING today. You've outgrown free, {kid_name}. Premium has no ceilings." Ultimate frustration capture. | 🔥🔥🔥🔥 |
+| A14 | **Leaderboard Ceiling Breaker** | Stuck at rank 11-50 for 7+ days: "Your rank isn't moving because 3 lessons/day caps your XP. Premium users earn 4x more daily — break into the top 10." | 🔥🔥🔥 |
+| A15 | **Social Proof Email** | Monthly: "{X} families in {country} upgraded this month. Top reasons: 12 AI lessons/day, squads with friends, unlimited challenges." Specific numbers sell. | 🔥🔥 |
+| A16 | **Back-to-School Annual Plan** | September: "New year, new skills. Premium: 12 AI lessons/day, unlimited library, squads, 6 profiles. 40% off annual for {kid_name}'s best school year." | 🔥🔥🔥 |
+| A17 | **Tarek Personal Offer** | 30 days active + still free: Tarek email: "You hit your limits {count} times. I want to remove them — here's 30% off Premium, just for you." One-time, high-touch. | 🔥🔥🔥 |
+| A18 | **Abandoned Upgrade Retarget** | Viewed pricing but didn't convert: 2h push "Still thinking? 12 AI lessons. Unlimited library. Squads. Unlimited challenges. 6 profiles. That's Premium." List the value. | 🔥🔥🔥🔥 |
+| A19 | **Exam Season Premium Push** | Before exams: "Exam prep needs more than 3 lessons/day. Premium = 12 AI + unlimited library. Prepare smarter, {kid_name}." Time-sensitive. | 🔥🔥🔥 |
+| A20 | **Gifting Campaign (Ramadan/Eid/Holidays)** | Parent: "Gift unlimited learning this Eid — Premium for the family (6 kids, 12 AI lessons/day, squads, unlimited challenges). 25% off." | 🔥🔥🔥 |
 
 ---
 

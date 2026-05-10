@@ -9,6 +9,16 @@
 - **Current goal:** 5,000 user-generated lessons in public library (currently ~30)
 - **Goal split:** 60% keep users active / 40% drive lesson generation
 
+### Freemium vs Premium
+
+| Feature | Freemium | Premium |
+|---------|----------|---------|
+| Kid Profiles | 2 max | 6 max |
+| Library Lessons (from Worlds) | 3/day | Unlimited |
+| AI Generation | 3/day | 12/day |
+| Squads | ❌ Locked | ✅ Full access |
+| Challenges | 2/day | Unlimited |
+
 ## Hard Rules (non-negotiable)
 
 - Max **5 push/day**, **3 email/day** per user

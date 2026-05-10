@@ -2,9 +2,16 @@
 
 ## Product Model
 
-- **Freemium:** 2 kid profiles max, daily + weekly generation limits (resets like ChatGPT/AI models)
-- **Premium:** 8 kid profiles, higher/unlimited limits, exclusive features
+| Feature | Freemium | Premium |
+|---------|----------|---------|
+| Kid Profiles | 2 max | 6 max |
+| Library Lessons (from Worlds) | 3/day | Unlimited |
+| AI Generation | 3/day | 12/day |
+| Squads | ❌ Locked | ✅ Full access |
+| Challenges | 2/day | Unlimited |
+
 - **No trial** — all conversion through value demonstration, not time-gated
+- Limits reset daily
 
 ## Updated Rules
 
@@ -20,15 +27,17 @@
 
 ### Trigger Conditions (ALL must be true)
 
-| # | Condition | Attribute | Check |
-|---|-----------|-----------|-------|
-| 1 | 5-Day Streak | `current_streak_days` | >= 5 |
-| 2 | Finished 3 Library Lessons | `lessons_completed_count` | >= 3 |
-| 3 | Created or Joined Squad 2x | `squads_joined_count + squads_created_count` | >= 2 |
-| 4 | Hit Any Feature Limit 2x | `daily_limit_hit_count` | >= 2 |
-| 5 | Hit 200 XP | `total_xp` | >= 200 |
-| 6 | Joined or Created Challenge | `challenges_joined_count + challenges_created_count` | >= 1 |
-| 7 | Started 6 Lessons | `lessons_started_count` | >= 6 |
+| # | Condition | Attribute | Check | Note |
+|---|-----------|-----------|-------|------|
+| 1 | 5-Day Streak | `current_streak_days` | >= 5 | Proves daily habit |
+| 2 | Finished 3 Library Lessons | `lessons_completed_count` | >= 3 | Hit library cap at least once |
+| 3 | Created or Joined Squad 2x | `squads_joined_count + squads_created_count` | >= 2 | Must be Premium to do this — so this condition only fires for Premium users OR is removed for free users who can't access squads |
+| 4 | Hit Any Feature Limit 2x | `daily_limit_hit_count` | >= 2 | Felt the friction (AI 3/day, library 3/day, or challenge 2/day) |
+| 5 | Hit 200 XP | `total_xp` | >= 200 | Invested enough to value upgrade |
+| 6 | Joined or Created Challenge | `challenges_joined_count + challenges_created_count` | >= 1 | Used competitive features |
+| 7 | Started 6 Lessons | `lessons_started_count` | >= 6 | Explored broadly |
+
+> **Note on condition #3 (Squads):** Since Squads are Premium-only, replace this for free users with: `challenges_created_count + challenges_joined_count >= 3` (used social/competitive features more heavily). Or remove it entirely for the free-user segment — the other 6 conditions still prove high engagement.
 
 **Segment name:** `S-EXCLUSIVE — Qualified for Exclusive Offer`
 **Segment logic:** All 7 conditions AND `exclusive_offer_sent != true` (one-time per user)
@@ -132,16 +141,16 @@ is_subscribed                 // bool — completed subscription
 
 | # | Campaign | Description | Impact |
 |---|----------|-------------|--------|
-| A21 | **Post-Exclusive-Offer Follow-Up** | 7 days after expired exclusive offer: "You almost unlocked Premium last time. This week Premium users generated {stats} more lessons than free. Your limits are still there." Regret seeding. | 🔥🔥🔥 |
-| A22 | **Parent Comparison Email** | "Kids with Premium generate 3x more lessons and have 2x longer streaks — because they never hit a wall. Here's {kid_name}'s potential without limits." Data-backed parent pitch. | 🔥🔥🔥 |
-| A23 | **Squad Premium Bundle** | Squad creator + 3 active members: "Upgrade your whole squad — group discount. Premium squads get exclusive badges + no member limits." | 🔥🔥🔥 |
-| A24 | **Weekly Limit + Rank Stall** | Users stuck at same rank 14+ days AND hitting weekly limit: "Your rank isn't moving because your limits cap your XP. Premium removes the ceiling." Connects cause to pain. | 🔥🔥🔥 |
-| A25 | **Chronic Limit Hitter Conversion** | Users who hit daily limit 5+ times total: "You've been capped {limit_hit_count} times. That's {missed_lessons} lessons you never got to create. Premium = zero caps, ever." Quantify the loss. | 🔥🔥🔥🔥 |
-| A26 | **Family Growth Trigger** | When parent has 2 profiles and searches/attempts 3rd: "Your family is growing! Premium supports 8 kid profiles — one subscription, whole family covered." Friction-to-conversion. | 🔥🔥🔥🔥 |
-| A27 | **Limit Reset Anticipation** | Push at 11:59pm before daily reset to limit-hitters: "Your limits reset at midnight. But Premium users never wait. Upgrade and generate right now." Anticipation + friction. | 🔥🔥🔥 |
-| A28 | **Creator Monetization Tease** | For 50+ lesson creators: "Premium creators will soon earn rewards for popular lessons. Get early access by upgrading now." Future feature as hook. | 🔥🔥🔥 |
-| A29 | **Challenge Loss + Limit Combo** | After 3+ challenge losses AND hit daily limit: "You couldn't practice more because of limits. Premium lets you train unlimited before your next challenge." Solve their pain with utility. | 🔥🔥🔥 |
-| A30 | **Both Kids Active → Family Pitch** | Both kid profiles active 5+ days: email to parent: "Both {kid1} and {kid2} love GetXplain! Premium for the family: 8 profiles, no limits, one price. They deserve it." Family value prop. | 🔥🔥🔥🔥 |
+| A21 | **Post-Exclusive-Offer Follow-Up** | 7 days after expired offer: "You almost unlocked Premium. This week Premium users created 4x more lessons. You're still stuck at 3/day." Regret + specific numbers. | 🔥🔥🔥 |
+| A22 | **Parent Limit Report** | "This week {kid_name} hit their AI limit {x} times, library limit {y} times, challenge limit {z} times. Premium removes all of them: 12 AI, unlimited library, unlimited challenges." Data-backed. | 🔥🔥🔥🔥 |
+| A23 | **Squad Invitation Wave** | When 3+ friends of a free user are in squads: "Your friends are in squads competing together. Squads are Premium-only — upgrade to join them." Social exclusion pressure. | 🔥🔥🔥🔥 |
+| A24 | **Rank Stall + Limit Connection** | Stuck at rank 14+ days: "Your rank isn't moving. Free = 3 AI + 3 library + 2 challenges/day. Premium users earn 4x more XP daily. That's why they're above you." Cause → effect. | 🔥🔥🔥 |
+| A25 | **All-Limits-Hit Streak** | User hits all 3 limits (AI + library + challenge) for 3 consecutive days: "3 days in a row you maxed out everything. You've outgrown free. Premium was made for kids like you." Chronic pattern. | 🔥🔥🔥🔥 |
+| A26 | **Family Growth Trigger** | Parent attempts 3rd profile: "Your family is growing! Premium supports 6 kid profiles — one subscription, whole family. Every child deserves to learn." | 🔥🔥🔥🔥 |
+| A27 | **Limit Reset Anticipation** | Push at 11:59pm to users who hit limits: "Limits reset at midnight. Free: 3 AI, 3 library, 2 challenges. Premium: 12 AI, unlimited library, unlimited challenges. Upgrade before tomorrow." | 🔥🔥🔥 |
+| A28 | **Creator Monetization Tease** | 50+ lesson creators: "Premium creators will earn rewards for popular lessons. Get early access — plus 12 AI generations/day to create even more." Future + utility. | 🔥🔥🔥 |
+| A29 | **Challenge Loss + Cap Combo** | 3+ challenge losses AND hit 2/day challenge cap: "You lost and couldn't practice more — capped at 2 challenges. Premium = unlimited challenges. Train and win." | 🔥🔥🔥 |
+| A30 | **Both Kids Active → Family Pitch** | Both profiles active 5+ days: "Both {kid1} and {kid2} love GetXplain! Premium: 6 profiles, 12 AI lessons, squads, unlimited challenges. One price, whole family." | 🔥🔥🔥🔥 |
 
 ### B+. Engagement (21–30)
 
