@@ -1,5 +1,11 @@
 # GetXplain.AI — Extended Campaign Ideas + Exclusive Offer System
 
+## Product Model
+
+- **Freemium:** 2 kid profiles max, daily + weekly generation limits (resets like ChatGPT/AI models)
+- **Premium:** 8 kid profiles, higher/unlimited limits, exclusive features
+- **No trial** — all conversion through value demonstration, not time-gated
+
 ## Updated Rules
 
 - Max **5 push/day** per user
@@ -126,16 +132,16 @@ is_subscribed                 // bool — completed subscription
 
 | # | Campaign | Description | Impact |
 |---|----------|-------------|--------|
-| A21 | **Post-Exclusive-Offer Follow-Up** | 7 days after expired exclusive offer: "You almost unlocked Premium last time. Here's what Premium users did this week: {stats}." Regret seeding. | 🔥🔥🔥 |
-| A22 | **Parent Comparison Email** | "Kids with Premium generate 3x more lessons and have 2x longer streaks. Here's {kid_name}'s potential." Data-backed parent pitch. | 🔥🔥🔥 |
-| A23 | **Squad Premium Bundle** | Squad creator + 3 active members: "Upgrade your whole squad — group discount. Premium squads get exclusive badges + squad challenges." | 🔥🔥🔥 |
-| A24 | **XP Ceiling Breaker** | Users stuck at same XP range for 14+ days: "Premium 2x XP weekends could break you through. One weekend = what takes 2 weeks." | 🔥🔥 |
-| A25 | **Generation Addict Conversion** | Users who hit daily limit 5+ times total: "You keep maxing out. Premium = unlimited. Your brain wants more — let it." | 🔥🔥🔥🔥 |
-| A26 | **School Year Kickoff Offer** | September 1–15: email to all parents. "New year, unlimited learning. 40% off annual plan. {kid_name}'s classmates are already upgrading." | 🔥🔥🔥 |
-| A27 | **Premium Preview Day** | Give free users 24h of premium features: "Today you have unlimited generation. See what Premium feels like." Then convert after taste. | 🔥🔥🔥🔥 |
-| A28 | **Creator Monetization Tease** | For 50+ lesson creators: "Premium creators will soon earn rewards for popular lessons. Get early access." Future feature as hook. | 🔥🔥🔥 |
-| A29 | **Challenge Loss → Premium Pitch** | After 3+ challenge losses: "Premium members get challenge analytics — see where you lost and how to win next time." Solve their pain. | 🔥🔥 |
-| A30 | **Milestone Gate** | At 500 XP: "You've outgrown free mode, {kid_name}. The next level of learning is Premium." Positioned as graduation, not paywall. | 🔥🔥🔥 |
+| A21 | **Post-Exclusive-Offer Follow-Up** | 7 days after expired exclusive offer: "You almost unlocked Premium last time. This week Premium users generated {stats} more lessons than free. Your limits are still there." Regret seeding. | 🔥🔥🔥 |
+| A22 | **Parent Comparison Email** | "Kids with Premium generate 3x more lessons and have 2x longer streaks — because they never hit a wall. Here's {kid_name}'s potential without limits." Data-backed parent pitch. | 🔥🔥🔥 |
+| A23 | **Squad Premium Bundle** | Squad creator + 3 active members: "Upgrade your whole squad — group discount. Premium squads get exclusive badges + no member limits." | 🔥🔥🔥 |
+| A24 | **Weekly Limit + Rank Stall** | Users stuck at same rank 14+ days AND hitting weekly limit: "Your rank isn't moving because your limits cap your XP. Premium removes the ceiling." Connects cause to pain. | 🔥🔥🔥 |
+| A25 | **Chronic Limit Hitter Conversion** | Users who hit daily limit 5+ times total: "You've been capped {limit_hit_count} times. That's {missed_lessons} lessons you never got to create. Premium = zero caps, ever." Quantify the loss. | 🔥🔥🔥🔥 |
+| A26 | **Family Growth Trigger** | When parent has 2 profiles and searches/attempts 3rd: "Your family is growing! Premium supports 8 kid profiles — one subscription, whole family covered." Friction-to-conversion. | 🔥🔥🔥🔥 |
+| A27 | **Limit Reset Anticipation** | Push at 11:59pm before daily reset to limit-hitters: "Your limits reset at midnight. But Premium users never wait. Upgrade and generate right now." Anticipation + friction. | 🔥🔥🔥 |
+| A28 | **Creator Monetization Tease** | For 50+ lesson creators: "Premium creators will soon earn rewards for popular lessons. Get early access by upgrading now." Future feature as hook. | 🔥🔥🔥 |
+| A29 | **Challenge Loss + Limit Combo** | After 3+ challenge losses AND hit daily limit: "You couldn't practice more because of limits. Premium lets you train unlimited before your next challenge." Solve their pain with utility. | 🔥🔥🔥 |
+| A30 | **Both Kids Active → Family Pitch** | Both kid profiles active 5+ days: email to parent: "Both {kid1} and {kid2} love GetXplain! Premium for the family: 8 profiles, no limits, one price. They deserve it." Family value prop. | 🔥🔥🔥🔥 |
 
 ### B+. Engagement (21–30)
 
