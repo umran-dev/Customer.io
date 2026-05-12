@@ -1,0 +1,1606 @@
+{
+  "valid": [
+    "S110 - Young Kids 6-8",
+    "S111 - Tweens 9-11",
+    "S112 - Early Teens 12-14",
+    "S113 - Teens 15-17",
+    "S122 - Egypt Users",
+    "S123 - Saudi Users",
+    "S124 - UAE Users",
+    "S18 - No Streak Yet",
+    "S19 - Day 1 Streak",
+    "S20 - Building Streak",
+    "S21 - 5-Day Hero",
+    "S22 - Week-Long Streak",
+    "S23 - Two-Week Beast",
+    "S24 - Streak Master",
+    "S89 - Has Followers"
+  ],
+  "invalid": [
+    [
+      "S2. Day 2 New User",
+      "days_since_signup",
+      "Use `_created_in_customerio_at` with `timestamp_gt` / `timestamp_lt` offsets (seconds) instead of a counter attribute."
+    ],
+    [
+      "S12 - 4-6 Day Gap",
+      "days_since_last_active",
+      "Use `last_sign_in_at` with timestamp operators and negative offsets (e.g. inactive 4d: to `timestamp_lt` value `-345600` paired with inverse `from`)."
+    ],
+    [
+      "S1 - Just Signed Up Today",
+      "days_since_signup",
+      "Use `_created_in_customerio_at` with `timestamp_gt` / `timestamp_lt` offsets (seconds) instead of a counter attribute."
+    ],
+    [
+      "S8 - Active Today",
+      "days_since_last_active",
+      "Use `last_sign_in_at` with timestamp operators and negative offsets (e.g. inactive 4d: to `timestamp_lt` value `-345600` paired with inverse `from`)."
+    ],
+    [
+      "S15 - 3 Weeks Gone",
+      "days_since_last_active",
+      "Use `last_sign_in_at` with timestamp operators and negative offsets (e.g. inactive 4d: to `timestamp_lt` value `-345600` paired with inverse `from`)."
+    ],
+    [
+      "S3 - First Week",
+      "days_since_signup",
+      "Use `_created_in_customerio_at` with `timestamp_gt` / `timestamp_lt` offsets (seconds) instead of a counter attribute."
+    ],
+    [
+      "S11 - 3-Day Gap",
+      "days_since_last_active",
+      "Use `last_sign_in_at` with timestamp operators and negative offsets (e.g. inactive 4d: to `timestamp_lt` value `-345600` paired with inverse `from`)."
+    ],
+    [
+      "S14 - 2 Weeks Gone",
+      "days_since_last_active",
+      "Use `last_sign_in_at` with timestamp operators and negative offsets (e.g. inactive 4d: to `timestamp_lt` value `-345600` paired with inverse `from`)."
+    ],
+    [
+      "S13 - 1 Week Gone",
+      "days_since_last_active",
+      "Use `last_sign_in_at` with timestamp operators and negative offsets (e.g. inactive 4d: to `timestamp_lt` value `-345600` paired with inverse `from`)."
+    ],
+    [
+      "S6 - 1 Month Old",
+      "days_since_signup",
+      "Use `_created_in_customerio_at` with `timestamp_gt` / `timestamp_lt` offsets (seconds) instead of a counter attribute."
+    ],
+    [
+      "S9 - Active Yesterday Only",
+      "days_since_last_active",
+      "Use `last_sign_in_at` with timestamp operators and negative offsets (e.g. inactive 4d: to `timestamp_lt` value `-345600` paired with inverse `from`)."
+    ],
+    [
+      "S10 - 2-Day Gap",
+      "days_since_last_active",
+      "Use `last_sign_in_at` with timestamp operators and negative offsets (e.g. inactive 4d: to `timestamp_lt` value `-345600` paired with inverse `from`)."
+    ],
+    [
+      "S4 - Crossed 1 Week",
+      "days_since_signup",
+      "Use `_created_in_customerio_at` with `timestamp_gt` / `timestamp_lt` offsets (seconds) instead of a counter attribute."
+    ],
+    [
+      "S5 - Crossed 2 Weeks",
+      "days_since_signup",
+      "Use `_created_in_customerio_at` with `timestamp_gt` / `timestamp_lt` offsets (seconds) instead of a counter attribute."
+    ],
+    [
+      "S7 - Veteran",
+      "days_since_signup",
+      "Use `_created_in_customerio_at` with `timestamp_gt` / `timestamp_lt` offsets (seconds) instead of a counter attribute."
+    ],
+    [
+      "S27 - Approaching Personal Best",
+      "about_to_hit_personal_best",
+      "Basel: add `about_to_hit_personal_best` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S25 - Streak About to Break",
+      "streak_at_risk",
+      "Basel: add `streak_at_risk` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S16 - 1 Month Gone",
+      "days_since_last_active",
+      "Use `last_sign_in_at` with timestamp operators and negative offsets (e.g. inactive 4d: to `timestamp_lt` value `-345600` paired with inverse `from`)."
+    ],
+    [
+      "S17 - Truly Lost",
+      "days_since_last_active",
+      "Use `last_sign_in_at` with timestamp operators and negative offsets (e.g. inactive 4d: to `timestamp_lt` value `-345600` paired with inverse `from`)."
+    ],
+    [
+      "S26 - Streak Just Broke",
+      "streak_just_broke",
+      "Basel: add `streak_just_broke` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S29 - Zero XP",
+      "total_xp",
+      "Use `xp` with the same numeric thresholds."
+    ],
+    [
+      "S42 - Lesson Master",
+      "lessons_completed_count",
+      "Use `lessons_completed_today` / `lessons_completed_this_week` / `lessons_completed_this_month` or `xp` + milestones; there is no `lessons_completed_count` in SOT."
+    ],
+    [
+      "S34 - No XP Today",
+      "days_since_last_active",
+      "Use `last_sign_in_at` with timestamp operators and negative offsets (e.g. inactive 4d: to `timestamp_lt` value `-345600` paired with inverse `from`)."
+    ],
+    [
+      "S34 - No XP Today",
+      "xp_today",
+      "Basel: add `xp_today` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S32 - High XP",
+      "total_xp",
+      "Use `xp` with the same numeric thresholds."
+    ],
+    [
+      "S30 - Low XP",
+      "total_xp",
+      "Use `xp` with the same numeric thresholds."
+    ],
+    [
+      "S37 - Just Leveled Up",
+      "leveled_up_today",
+      "Basel: add `leveled_up_today` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S31 - Mid XP",
+      "total_xp",
+      "Use `xp` with the same numeric thresholds."
+    ],
+    [
+      "S40 - Casual Learner",
+      "lessons_completed_count",
+      "Use `lessons_completed_today` / `lessons_completed_this_week` / `lessons_completed_this_month` or `xp` + milestones; there is no `lessons_completed_count` in SOT."
+    ],
+    [
+      "S36 - Close to Level Up",
+      "xp_to_next_level",
+      "Basel: add `xp_to_next_level` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S33 - XP Whale",
+      "total_xp",
+      "Use `xp` with the same numeric thresholds."
+    ],
+    [
+      "S41 - Dedicated Learner",
+      "lessons_completed_count",
+      "Use `lessons_completed_today` / `lessons_completed_this_week` / `lessons_completed_this_month` or `xp` + milestones; there is no `lessons_completed_count` in SOT."
+    ],
+    [
+      "S39 - Completed 1",
+      "lessons_completed_count",
+      "Use `lessons_completed_today` / `lessons_completed_this_week` / `lessons_completed_this_month` or `xp` + milestones; there is no `lessons_completed_count` in SOT."
+    ],
+    [
+      "S38 - Never Completed Lesson",
+      "lessons_completed_count",
+      "Use `lessons_completed_today` / `lessons_completed_this_week` / `lessons_completed_this_month` or `xp` + milestones; there is no `lessons_completed_count` in SOT."
+    ],
+    [
+      "S53 - Library Builder",
+      "lessons_generated_count",
+      "Basel: add `lessons_generated_count` (number) or proxy via `questions_asked_today`/`questions_asked_this_week` if aligned."
+    ],
+    [
+      "S44 - Abandoned Recently",
+      "last_lesson_started_at",
+      "Basel: add `last_lesson_started_at` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S44 - Abandoned Recently",
+      "lessons_in_progress_count",
+      "Basel: add `lessons_in_progress_count` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S45 - Easy Mode Only",
+      "lessons_completed_easy",
+      "Basel: add `lessons_completed_easy` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S45 - Easy Mode Only",
+      "lessons_completed_medium",
+      "Basel: add `lessons_completed_medium` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S49 - Never Generated",
+      "lessons_generated_count",
+      "Basel: add `lessons_generated_count` (number) or proxy via `questions_asked_today`/`questions_asked_this_week` if aligned."
+    ],
+    [
+      "S54 - Hit Daily Limit Today",
+      "daily_limit_hit",
+      "Basel: add `daily_limit_hit` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S43 - Has Abandoned Lesson",
+      "lessons_abandoned_count",
+      "Basel: add `lessons_abandoned_count` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S48 - Lesson Speed Runner",
+      "avg_lesson_completion_rate",
+      "Basel: add `avg_lesson_completion_rate` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S55 - Hit Limit Yesterday",
+      "daily_limit_hit_yesterday",
+      "Basel: add `daily_limit_hit_yesterday` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S55 - Hit Limit Yesterday",
+      "days_since_last_active",
+      "Use `last_sign_in_at` with timestamp operators and negative offsets (e.g. inactive 4d: to `timestamp_lt` value `-345600` paired with inverse `from`)."
+    ],
+    [
+      "S47 - Hard Mode Champion",
+      "lessons_completed_hard",
+      "Basel: add `lessons_completed_hard` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S50 - Tried Once",
+      "lessons_generated_count",
+      "Basel: add `lessons_generated_count` (number) or proxy via `questions_asked_today`/`questions_asked_this_week` if aligned."
+    ],
+    [
+      "S52 - Active Generator",
+      "lessons_generated_count",
+      "Basel: add `lessons_generated_count` (number) or proxy via `questions_asked_today`/`questions_asked_this_week` if aligned."
+    ],
+    [
+      "S46 - Ready for Harder",
+      "lessons_completed_hard",
+      "Basel: add `lessons_completed_hard` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S46 - Ready for Harder",
+      "lessons_completed_medium",
+      "Basel: add `lessons_completed_medium` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S51 - Casual Creator",
+      "lessons_generated_count",
+      "Basel: add `lessons_generated_count` (number) or proxy via `questions_asked_today`/`questions_asked_this_week` if aligned."
+    ],
+    [
+      "S59 - Type User",
+      "preferred_generation_method",
+      "Basel: add `preferred_generation_method` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S61 - English Generator",
+      "generates_in_english",
+      "Basel: add `generates_in_english` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S64 - Famous Creator",
+      "their_lessons_used_by_others",
+      "Basel: add `their_lessons_used_by_others` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S68 - Stuck in Sciences",
+      "favorite_world",
+      "Use `favourite_category` and/or `last_question_generated_world` / per-world XP fields depending on intent."
+    ],
+    [
+      "S68 - Stuck in Sciences",
+      "worlds_visited_count",
+      "Use `worlds_totals` or specific `world_*_started_lessons` / `world_*_completed_lessons` counts; Basel: add `worlds_visited_count` (number) if you need a single counter."
+    ],
+    [
+      "S65 - Quality Creator",
+      "quality_score_avg",
+      "Basel: add `quality_score_avg` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S66 - Single-World User",
+      "worlds_visited_count",
+      "Use `worlds_totals` or specific `world_*_started_lessons` / `world_*_completed_lessons` counts; Basel: add `worlds_visited_count` (number) if you need a single counter."
+    ],
+    [
+      "S69 - 2-3 Worlds",
+      "worlds_visited_count",
+      "Use `worlds_totals` or specific `world_*_started_lessons` / `world_*_completed_lessons` counts; Basel: add `worlds_visited_count` (number) if you need a single counter."
+    ],
+    [
+      "S60 - Arabic Generator",
+      "generates_in_arabic",
+      "Basel: add `generates_in_arabic` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S70 - Wide Explorer",
+      "worlds_visited_count",
+      "Use `worlds_totals` or specific `world_*_started_lessons` / `world_*_completed_lessons` counts; Basel: add `worlds_visited_count` (number) if you need a single counter."
+    ],
+    [
+      "S56 - Frequent Limit-Hitter",
+      "daily_limit_hit_count",
+      "Basel: add `daily_limit_hit_count` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S63 - Their Lesson Got Used",
+      "their_lessons_used_by_others",
+      "Basel: add `their_lessons_used_by_others` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S58 - Photo User",
+      "preferred_generation_method",
+      "Basel: add `preferred_generation_method` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S57 - Voice User",
+      "preferred_generation_method",
+      "Basel: add `preferred_generation_method` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S62 - Bilingual",
+      "generates_in_arabic",
+      "Basel: add `generates_in_arabic` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S62 - Bilingual",
+      "generates_in_english",
+      "Basel: add `generates_in_english` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S67 - Stuck in Mathematics",
+      "favorite_world",
+      "Use `favourite_category` and/or `last_question_generated_world` / per-world XP fields depending on intent."
+    ],
+    [
+      "S67 - Stuck in Mathematics",
+      "worlds_visited_count",
+      "Use `worlds_totals` or specific `world_*_started_lessons` / `world_*_completed_lessons` counts; Basel: add `worlds_visited_count` (number) if you need a single counter."
+    ],
+    [
+      "S79 - Language Learner",
+      "favorite_world",
+      "Use `favourite_category` and/or `last_question_generated_world` / per-world XP fields depending on intent."
+    ],
+    [
+      "S81 - No Squad",
+      "squads_joined_count",
+      "Basel: add `squads_joined_count` (number); SOT only has `squad` string."
+    ],
+    [
+      "S88 - No Follows",
+      "follows_count",
+      "Use `following_count` (SOT name) with the same pattern."
+    ],
+    [
+      "S90 - Friend Did Something",
+      "days_since_last_active",
+      "Use `last_sign_in_at` with timestamp operators and negative offsets (e.g. inactive 4d: to `timestamp_lt` value `-345600` paired with inverse `from`)."
+    ],
+    [
+      "S90 - Friend Did Something",
+      "last_friend_activity_at",
+      "Basel: add `last_friend_activity_at` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S85 - Squad Going Quiet",
+      "squad_inactive",
+      "Basel: add `squad_inactive` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S84 - Active Squad",
+      "squad_was_active",
+      "Basel: add `squad_was_active` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S77 - Creative Soul",
+      "favorite_world",
+      "Use `favourite_category` and/or `last_question_generated_world` / per-world XP fields depending on intent."
+    ],
+    [
+      "S86 - Top Squad Contributor",
+      "squad_rank_in_squad",
+      "Basel: add `squad_rank_in_squad` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S83 - Squad Creator",
+      "squads_created_count",
+      "Basel: add `squads_created_count` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S78 - History Buff",
+      "favorite_world",
+      "Use `favourite_category` and/or `last_question_generated_world` / per-world XP fields depending on intent."
+    ],
+    [
+      "S82 - Squad Member",
+      "squads_joined_count",
+      "Basel: add `squads_joined_count` (number); SOT only has `squad` string."
+    ],
+    [
+      "S76 - Code Kid",
+      "favorite_world",
+      "Use `favourite_category` and/or `last_question_generated_world` / per-world XP fields depending on intent."
+    ],
+    [
+      "S75 - Math Lover",
+      "favorite_world",
+      "Use `favourite_category` and/or `last_question_generated_world` / per-world XP fields depending on intent."
+    ],
+    [
+      "S71 - World Completionist",
+      "worlds_visited_count",
+      "Use `worlds_totals` or specific `world_*_started_lessons` / `world_*_completed_lessons` counts; Basel: add `worlds_visited_count` (number) if you need a single counter."
+    ],
+    [
+      "S100 - Challenge Loss Streak",
+      "consecutive_challenge_losses",
+      "Basel: add `consecutive_challenge_losses` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S99 - Challenge Win Streak",
+      "consecutive_challenge_wins",
+      "Basel: add `consecutive_challenge_wins` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S94 - Challenge Joiner",
+      "challenges_joined_count",
+      "Basel: add `challenges_joined_count` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S106 - #1 in School",
+      "leaderboard_rank_school",
+      "Basel: add `leaderboard_rank_school` (number) or encode rank inside `current_leaderboard` and filter on that."
+    ],
+    [
+      "S98 - Challenge Expiring Soon",
+      "about_to_lose_challenge",
+      "Basel: add `about_to_lose_challenge` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S96 - Pending Challenge Invite",
+      "challenge_pending_invite",
+      "Basel: add `challenge_pending_invite` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S95 - Challenge Creator",
+      "challenges_created_count",
+      "Basel: add `challenges_created_count` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S92 - Beat Friend Today",
+      "overtook_friend_today",
+      "Basel: add `overtook_friend_today` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S104 - Top 10 Country",
+      "leaderboard_rank_country",
+      "Basel: add `leaderboard_rank_country` (number) or derive from `current_leaderboard` + `country`."
+    ],
+    [
+      "S93 - Never Joined Challenge",
+      "challenges_joined_count",
+      "Basel: add `challenges_joined_count` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S93 - Never Joined Challenge",
+      "days_since_signup",
+      "Use `_created_in_customerio_at` with `timestamp_gt` / `timestamp_lt` offsets (seconds) instead of a counter attribute."
+    ],
+    [
+      "S91 - Friend Overtook Me",
+      "friend_overtook_xp",
+      "Basel: add `friend_overtook_xp` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S103 - Top 100 Global",
+      "leaderboard_rank_global",
+      "Use `current_leaderboard` / `previous_leaderboard` JSON or per-world `world_*_leaderboard_position`; if global rank is required, Basel: add `leaderboard_rank_global` (number)."
+    ],
+    [
+      "S97 - Active Challenge Going",
+      "in_active_challenge",
+      "Basel: add `in_active_challenge` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S102 - Top 10 Global",
+      "leaderboard_rank_global",
+      "Use `current_leaderboard` / `previous_leaderboard` JSON or per-world `world_*_leaderboard_position`; if global rank is required, Basel: add `leaderboard_rank_global` (number)."
+    ],
+    [
+      "S105 - Top 10 School",
+      "leaderboard_rank_school",
+      "Basel: add `leaderboard_rank_school` (number) or encode rank inside `current_leaderboard` and filter on that."
+    ],
+    [
+      "S114 - Boys 6-8",
+      "kid_gender",
+      "Use `gender` with the same eq/to+from pattern (values must match how you store `gender`)."
+    ],
+    [
+      "S118 - Girls 6-8",
+      "kid_gender",
+      "Use `gender` with the same eq/to+from pattern (values must match how you store `gender`)."
+    ],
+    [
+      "S119 - Girls 9-11",
+      "kid_gender",
+      "Use `gender` with the same eq/to+from pattern (values must match how you store `gender`)."
+    ],
+    [
+      "S121 - Girls 15-17",
+      "kid_gender",
+      "Use `gender` with the same eq/to+from pattern (values must match how you store `gender`)."
+    ],
+    [
+      "S108 - Rank Dropped Today",
+      "rank_dropped",
+      "Basel: add `rank_dropped` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S107 - Just Outside Top 10",
+      "leaderboard_rank_global",
+      "Use `current_leaderboard` / `previous_leaderboard` JSON or per-world `world_*_leaderboard_position`; if global rank is required, Basel: add `leaderboard_rank_global` (number)."
+    ],
+    [
+      "S109 - Rank Climbed Today",
+      "rank_climbed",
+      "Basel: add `rank_climbed` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S115 - Boys 9-11",
+      "kid_gender",
+      "Use `gender` with the same eq/to+from pattern (values must match how you store `gender`)."
+    ],
+    [
+      "S116 - Boys 12-14",
+      "kid_gender",
+      "Use `gender` with the same eq/to+from pattern (values must match how you store `gender`)."
+    ],
+    [
+      "S117 - Boys 15-17",
+      "kid_gender",
+      "Use `gender` with the same eq/to+from pattern (values must match how you store `gender`)."
+    ],
+    [
+      "S120 - Girls 12-14",
+      "kid_gender",
+      "Use `gender` with the same eq/to+from pattern (values must match how you store `gender`)."
+    ],
+    [
+      "S126 - Morning Active",
+      "most_active_hour",
+      "Basel: add `most_active_hour` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S134 - Long Session User",
+      "avg_session_duration_seconds",
+      "Basel: add `avg_session_duration_seconds` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S128 - Evening Active",
+      "most_active_hour",
+      "Basel: add `most_active_hour` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S129 - Late-Night Active",
+      "most_active_hour",
+      "Basel: add `most_active_hour` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S130 - Weekend Warriors",
+      "weekend_user",
+      "Basel: add `weekend_user` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S132 - School-Hour Sneaker",
+      "school_hours_user",
+      "Basel: add `school_hours_user` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S137 - Notification Ignorer",
+      "notification_open_rate",
+      "Basel: add `notification_open_rate` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S127 - After-School Active",
+      "most_active_hour",
+      "Basel: add `most_active_hour` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S127 - After-School Active",
+      "weekday_user",
+      "Basel: add `weekday_user` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S131 - Weekday Workers",
+      "weekday_user",
+      "Basel: add `weekday_user` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S135 - Quick Tap User",
+      "avg_session_duration_seconds",
+      "Basel: add `avg_session_duration_seconds` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S136 - Notification Lover",
+      "notification_open_rate",
+      "Basel: add `notification_open_rate` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S133 - Daily Multi-Session",
+      "sessions_today",
+      "Basel: add `sessions_today` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S139 - Streak Saver Boy 9-11",
+      "kid_gender",
+      "Use `gender` with the same eq/to+from pattern (values must match how you store `gender`)."
+    ],
+    [
+      "S139 - Streak Saver Boy 9-11",
+      "streak_at_risk",
+      "Basel: add `streak_at_risk` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S150 - Comeback Kid",
+      "recently_recovered",
+      "Basel: add `recently_recovered` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S138 - Push Fatigued",
+      "notification_dismiss_count_7d",
+      "Basel: add `notification_dismiss_count_7d` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S147 - Generator Block",
+      "days_since_last_active",
+      "Use `last_sign_in_at` with timestamp operators and negative offsets (e.g. inactive 4d: to `timestamp_lt` value `-345600` paired with inverse `from`)."
+    ],
+    [
+      "S147 - Generator Block",
+      "lessons_generated_count",
+      "Basel: add `lessons_generated_count` (number) or proxy via `questions_asked_today`/`questions_asked_this_week` if aligned."
+    ],
+    [
+      "S140 - Squad Hero Girl",
+      "kid_gender",
+      "Use `gender` with the same eq/to+from pattern (values must match how you store `gender`)."
+    ],
+    [
+      "S140 - Squad Hero Girl",
+      "squad_inactive",
+      "Basel: add `squad_inactive` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S140 - Squad Hero Girl",
+      "squads_joined_count",
+      "Basel: add `squads_joined_count` (number); SOT only has `squad` string."
+    ],
+    [
+      "S149 - Discovery Day",
+      "days_since_last_active",
+      "Use `last_sign_in_at` with timestamp operators and negative offsets (e.g. inactive 4d: to `timestamp_lt` value `-345600` paired with inverse `from`)."
+    ],
+    [
+      "S149 - Discovery Day",
+      "multi_world_user",
+      "Basel: add `multi_world_user` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S152 - Daily Challenge Streak",
+      "daily_challenges_completed_consecutive",
+      "Basel: add `daily_challenges_completed_consecutive` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S141 - Quiet Power-Creator",
+      "days_since_last_active",
+      "Use `last_sign_in_at` with timestamp operators and negative offsets (e.g. inactive 4d: to `timestamp_lt` value `-345600` paired with inverse `from`)."
+    ],
+    [
+      "S141 - Quiet Power-Creator",
+      "power_creator",
+      "Basel: add `power_creator` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S151 - Never Did Daily Challenge",
+      "daily_challenges_completed",
+      "Basel: add `daily_challenges_completed` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S143 - Friend's Active, You're Not",
+      "days_since_last_active",
+      "Use `last_sign_in_at` with timestamp operators and negative offsets (e.g. inactive 4d: to `timestamp_lt` value `-345600` paired with inverse `from`)."
+    ],
+    [
+      "S143 - Friend's Active, You're Not",
+      "follows_count",
+      "Use `following_count` (SOT name) with the same pattern."
+    ],
+    [
+      "S143 - Friend's Active, You're Not",
+      "last_friend_activity_at",
+      "Basel: add `last_friend_activity_at` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S142 - Math Lover Slipping",
+      "days_since_last_active",
+      "Use `last_sign_in_at` with timestamp operators and negative offsets (e.g. inactive 4d: to `timestamp_lt` value `-345600` paired with inverse `from`)."
+    ],
+    [
+      "S142 - Math Lover Slipping",
+      "favorite_world",
+      "Use `favourite_category` and/or `last_question_generated_world` / per-world XP fields depending on intent."
+    ],
+    [
+      "S144 - Almost Personal Best",
+      "about_to_hit_personal_best",
+      "Basel: add `about_to_hit_personal_best` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S144 - Almost Personal Best",
+      "streak_at_risk",
+      "Basel: add `streak_at_risk` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S146 - Power User Going Quiet",
+      "days_since_last_active",
+      "Use `last_sign_in_at` with timestamp operators and negative offsets (e.g. inactive 4d: to `timestamp_lt` value `-345600` paired with inverse `from`)."
+    ],
+    [
+      "S146 - Power User Going Quiet",
+      "power_user",
+      "Basel: add `power_user` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S145 - New Country Explorer",
+      "worlds_visited_count",
+      "Use `worlds_totals` or specific `world_*_started_lessons` / `world_*_completed_lessons` counts; Basel: add `worlds_visited_count` (number) if you need a single counter."
+    ],
+    [
+      "S148 - Lonely Leaderboard",
+      "leaderboard_rank_global",
+      "Use `current_leaderboard` / `previous_leaderboard` JSON or per-world `world_*_leaderboard_position`; if global rank is required, Basel: add `leaderboard_rank_global` (number)."
+    ],
+    [
+      "S148 - Lonely Leaderboard",
+      "squads_joined_count",
+      "Basel: add `squads_joined_count` (number); SOT only has `squad` string."
+    ],
+    [
+      "S155 - Completed Daily Challenge",
+      "daily_challenge_completed_today",
+      "Basel: add `daily_challenge_completed_today` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S153 - Skipped Today's Challenge",
+      "daily_challenge_available",
+      "Basel: add `daily_challenge_available` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S153 - Skipped Today's Challenge",
+      "daily_challenge_started_today",
+      "Basel: add `daily_challenge_started_today` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S153 - Skipped Today's Challenge",
+      "days_since_last_active",
+      "Use `last_sign_in_at` with timestamp operators and negative offsets (e.g. inactive 4d: to `timestamp_lt` value `-345600` paired with inverse `from`)."
+    ],
+    [
+      "S171 - Never Shared a Lesson",
+      "lessons_shared_count",
+      "Basel: add `lessons_shared_count` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S167 - Has Unfinished in Backpack",
+      "backpack_in_progress_count",
+      "Basel: add `backpack_in_progress_count` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S154 - Started Daily Challenge",
+      "daily_challenge_completed_today",
+      "Basel: add `daily_challenge_completed_today` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S154 - Started Daily Challenge",
+      "daily_challenge_started_today",
+      "Basel: add `daily_challenge_started_today` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S159 - High Accuracy Kid",
+      "avg_accuracy",
+      "Basel: add `avg_accuracy` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S163 - Lost XP From Wrong Answers",
+      "xp_lost_today",
+      "Basel: add `xp_lost_today` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S164 - Never Got Wrong Answer",
+      "lessons_completed_count",
+      "Use `lessons_completed_today` / `lessons_completed_this_week` / `lessons_completed_this_month` or `xp` + milestones; there is no `lessons_completed_count` in SOT."
+    ],
+    [
+      "S164 - Never Got Wrong Answer",
+      "total_wrong_answers",
+      "Basel: add `total_wrong_answers` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S168 - Backpack Hoarder",
+      "backpack_lesson_count",
+      "Basel: add `backpack_lesson_count` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S165 - Guessing Pattern",
+      "avg_time_per_answer",
+      "Basel: add `avg_time_per_answer` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S156 - Always Easy Mode DC",
+      "daily_challenge_preferred_difficulty",
+      "Basel: add `daily_challenge_preferred_difficulty` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S157 - Hard Mode Daily Grinder",
+      "daily_challenge_preferred_difficulty",
+      "Basel: add `daily_challenge_preferred_difficulty` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S169 - Saved But Never Opened",
+      "backpack_opened_from_save",
+      "Basel: add `backpack_opened_from_save` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S169 - Saved But Never Opened",
+      "backpack_saved_count",
+      "Basel: add `backpack_saved_count` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S166 - Empty Backpack",
+      "backpack_lesson_count",
+      "Basel: add `backpack_lesson_count` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S160 - Struggling Kid",
+      "avg_accuracy",
+      "Basel: add `avg_accuracy` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S179 - Never Visited Explore Tab",
+      "days_since_signup",
+      "Use `_created_in_customerio_at` with `timestamp_gt` / `timestamp_lt` offsets (seconds) instead of a counter attribute."
+    ],
+    [
+      "S179 - Never Visited Explore Tab",
+      "explore_tab_opened",
+      "Basel: add `explore_tab_opened` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S177 - Never Used Photo Input",
+      "lessons_generated_count",
+      "Basel: add `lessons_generated_count` (number) or proxy via `questions_asked_today`/`questions_asked_this_week` if aligned."
+    ],
+    [
+      "S177 - Never Used Photo Input",
+      "photo_generation_count",
+      "Basel: add `photo_generation_count` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S181 - Never Followed Anyone",
+      "days_since_signup",
+      "Use `_created_in_customerio_at` with `timestamp_gt` / `timestamp_lt` offsets (seconds) instead of a counter attribute."
+    ],
+    [
+      "S181 - Never Followed Anyone",
+      "follows_count",
+      "Use `following_count` (SOT name) with the same pattern."
+    ],
+    [
+      "S178 - Never Visited Compete Tab",
+      "compete_tab_opened",
+      "Basel: add `compete_tab_opened` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S178 - Never Visited Compete Tab",
+      "days_since_signup",
+      "Use `_created_in_customerio_at` with `timestamp_gt` / `timestamp_lt` offsets (seconds) instead of a counter attribute."
+    ],
+    [
+      "S174 - Viral Sharer",
+      "referral_signups",
+      "Basel: add `referral_signups` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S173 - Shared But No Friends Joined",
+      "lessons_shared_count",
+      "Basel: add `lessons_shared_count` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S173 - Shared But No Friends Joined",
+      "referral_signups",
+      "Basel: add `referral_signups` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S186 - Deep Diver",
+      "avg_actions_per_session",
+      "Basel: add `avg_actions_per_session` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S180 - Never Visited Leaderboard",
+      "days_since_signup",
+      "Use `_created_in_customerio_at` with `timestamp_gt` / `timestamp_lt` offsets (seconds) instead of a counter attribute."
+    ],
+    [
+      "S180 - Never Visited Leaderboard",
+      "leaderboard_viewed",
+      "Basel: add `leaderboard_viewed` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S172 - Active Sharer",
+      "lessons_shared_count",
+      "Basel: add `lessons_shared_count` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S182 - Used All Features",
+      "challenges_joined_count",
+      "Basel: add `challenges_joined_count` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S182 - Used All Features",
+      "follows_count",
+      "Use `following_count` (SOT name) with the same pattern."
+    ],
+    [
+      "S182 - Used All Features",
+      "lessons_completed_count",
+      "Use `lessons_completed_today` / `lessons_completed_this_week` / `lessons_completed_this_month` or `xp` + milestones; there is no `lessons_completed_count` in SOT."
+    ],
+    [
+      "S182 - Used All Features",
+      "lessons_generated_count",
+      "Basel: add `lessons_generated_count` (number) or proxy via `questions_asked_today`/`questions_asked_this_week` if aligned."
+    ],
+    [
+      "S182 - Used All Features",
+      "squads_joined_count",
+      "Basel: add `squads_joined_count` (number); SOT only has `squad` string."
+    ],
+    [
+      "S175 - Never Used Search",
+      "days_since_signup",
+      "Use `_created_in_customerio_at` with `timestamp_gt` / `timestamp_lt` offsets (seconds) instead of a counter attribute."
+    ],
+    [
+      "S175 - Never Used Search",
+      "search_count",
+      "Basel: add `search_count` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S176 - Never Used Voice Input",
+      "lessons_generated_count",
+      "Basel: add `lessons_generated_count` (number) or proxy via `questions_asked_today`/`questions_asked_this_week` if aligned."
+    ],
+    [
+      "S176 - Never Used Voice Input",
+      "voice_generation_count",
+      "Basel: add `voice_generation_count` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S183 - Opened App But Did Nothing",
+      "actions_today",
+      "Basel: add `actions_today` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S183 - Opened App But Did Nothing",
+      "sessions_today",
+      "Basel: add `sessions_today` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S185 - One-Action Sessions",
+      "avg_actions_per_session",
+      "Basel: add `avg_actions_per_session` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S184 - Browse Only",
+      "worlds_viewed_today",
+      "Basel: add `worlds_viewed_today` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S192 - Day 14 Alive",
+      "days_since_last_active",
+      "Use `last_sign_in_at` with timestamp operators and negative offsets (e.g. inactive 4d: to `timestamp_lt` value `-345600` paired with inverse `from`)."
+    ],
+    [
+      "S192 - Day 14 Alive",
+      "days_since_signup",
+      "Use `_created_in_customerio_at` with `timestamp_gt` / `timestamp_lt` offsets (seconds) instead of a counter attribute."
+    ],
+    [
+      "S201 - 1000 XP Milestone",
+      "total_xp",
+      "Use `xp` with the same numeric thresholds."
+    ],
+    [
+      "S193 - Day 30 Alive",
+      "days_since_last_active",
+      "Use `last_sign_in_at` with timestamp operators and negative offsets (e.g. inactive 4d: to `timestamp_lt` value `-345600` paired with inverse `from`)."
+    ],
+    [
+      "S193 - Day 30 Alive",
+      "days_since_signup",
+      "Use `_created_in_customerio_at` with `timestamp_gt` / `timestamp_lt` offsets (seconds) instead of a counter attribute."
+    ],
+    [
+      "S202 - 10 Generations Milestone",
+      "lessons_generated_count",
+      "Basel: add `lessons_generated_count` (number) or proxy via `questions_asked_today`/`questions_asked_this_week` if aligned."
+    ],
+    [
+      "S200 - 500 XP Milestone",
+      "total_xp",
+      "Use `xp` with the same numeric thresholds."
+    ],
+    [
+      "S198 - 50 Lessons Milestone",
+      "lessons_completed_count",
+      "Use `lessons_completed_today` / `lessons_completed_this_week` / `lessons_completed_this_month` or `xp` + milestones; there is no `lessons_completed_count` in SOT."
+    ],
+    [
+      "S212 - Follows But No Followers",
+      "follows_count",
+      "Use `following_count` (SOT name) with the same pattern."
+    ],
+    [
+      "S210 - Generation Velocity Up",
+      "lessons_generated_this_week",
+      "Basel: add `lessons_generated_this_week` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S196 - 10 Lessons Milestone",
+      "lessons_completed_count",
+      "Use `lessons_completed_today` / `lessons_completed_this_week` / `lessons_completed_this_month` or `xp` + milestones; there is no `lessons_completed_count` in SOT."
+    ],
+    [
+      "S209 - Zero Generations This Week",
+      "lessons_generated_count",
+      "Basel: add `lessons_generated_count` (number) or proxy via `questions_asked_today`/`questions_asked_this_week` if aligned."
+    ],
+    [
+      "S209 - Zero Generations This Week",
+      "lessons_generated_this_week",
+      "Basel: add `lessons_generated_this_week` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S191 - Day 7 Alive",
+      "days_since_last_active",
+      "Use `last_sign_in_at` with timestamp operators and negative offsets (e.g. inactive 4d: to `timestamp_lt` value `-345600` paired with inverse `from`)."
+    ],
+    [
+      "S191 - Day 7 Alive",
+      "days_since_signup",
+      "Use `_created_in_customerio_at` with `timestamp_gt` / `timestamp_lt` offsets (seconds) instead of a counter attribute."
+    ],
+    [
+      "S190 - Day 3 Alive",
+      "days_since_last_active",
+      "Use `last_sign_in_at` with timestamp operators and negative offsets (e.g. inactive 4d: to `timestamp_lt` value `-345600` paired with inverse `from`)."
+    ],
+    [
+      "S190 - Day 3 Alive",
+      "days_since_signup",
+      "Use `_created_in_customerio_at` with `timestamp_gt` / `timestamp_lt` offsets (seconds) instead of a counter attribute."
+    ],
+    [
+      "S189 - Multi-World Per Session",
+      "avg_worlds_per_session",
+      "Basel: add `avg_worlds_per_session` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S197 - 25 Lessons Milestone",
+      "lessons_completed_count",
+      "Use `lessons_completed_today` / `lessons_completed_this_week` / `lessons_completed_this_month` or `xp` + milestones; there is no `lessons_completed_count` in SOT."
+    ],
+    [
+      "S199 - 100 XP Milestone",
+      "total_xp",
+      "Use `xp` with the same numeric thresholds."
+    ],
+    [
+      "S220 - Won First Challenge",
+      "challenges_won_count",
+      "Basel: add `challenges_won_count` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S224 - Challenge Addict",
+      "challenges_joined_count",
+      "Basel: add `challenges_joined_count` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S226 - Squad of 1",
+      "squad_member_count",
+      "Basel: add `squad_member_count` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S226 - Squad of 1",
+      "squads_joined_count",
+      "Basel: add `squads_joined_count` (number); SOT only has `squad` string."
+    ],
+    [
+      "S218 - Same School Friends",
+      "follows_same_school_count",
+      "Basel: add `follows_same_school_count` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S221 - Lost First Challenge",
+      "challenges_lost_count",
+      "Basel: add `challenges_lost_count` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S221 - Lost First Challenge",
+      "challenges_won_count",
+      "Basel: add `challenges_won_count` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S217 - Friend Inactive 7 Days",
+      "all_followed_users_inactive_7d",
+      "Basel: add `all_followed_users_inactive_7d` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S217 - Friend Inactive 7 Days",
+      "follows_count",
+      "Use `following_count` (SOT name) with the same pattern."
+    ],
+    [
+      "S228 - Squad XP Leader",
+      "squad_member_count",
+      "Basel: add `squad_member_count` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S228 - Squad XP Leader",
+      "squad_rank_in_squad",
+      "Basel: add `squad_rank_in_squad` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S225 - Never Created Challenge",
+      "challenges_created_count",
+      "Basel: add `challenges_created_count` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S225 - Never Created Challenge",
+      "challenges_joined_count",
+      "Basel: add `challenges_joined_count` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S227 - Full Squad",
+      "squad_member_count",
+      "Basel: add `squad_member_count` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S219 - Challenge Creator, No Takers",
+      "challenges_accepted",
+      "Basel: add `challenges_accepted` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S219 - Challenge Creator, No Takers",
+      "challenges_created_count",
+      "Basel: add `challenges_created_count` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S223 - Revenge Match Available",
+      "last_challenge_result",
+      "Basel: add `last_challenge_result` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S214 - Mutual Follows",
+      "mutual_follows_count",
+      "Basel: add `mutual_follows_count` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S216 - New Follower Today",
+      "new_follower_today",
+      "Basel: add `new_follower_today` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S213 - Has Followers But No Follows",
+      "follows_count",
+      "Use `following_count` (SOT name) with the same pattern."
+    ],
+    [
+      "S222 - Undefeated",
+      "challenges_lost_count",
+      "Basel: add `challenges_lost_count` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S222 - Undefeated",
+      "challenges_won_count",
+      "Basel: add `challenges_won_count` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S234 - Prefers Long Lessons",
+      "avg_lesson_steps_chosen",
+      "Basel: add `avg_lesson_steps_chosen` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S238 - Verbal Learner Signal",
+      "voice_generation_count",
+      "Basel: add `voice_generation_count` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S236 - Speed Runner",
+      "avg_time_per_step",
+      "Basel: add `avg_time_per_step` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S235 - Reads Before Answering",
+      "avg_time_per_step",
+      "Basel: add `avg_time_per_step` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S243 - Content But No Social",
+      "follows_count",
+      "Use `following_count` (SOT name) with the same pattern."
+    ],
+    [
+      "S243 - Content But No Social",
+      "lessons_completed_count",
+      "Use `lessons_completed_today` / `lessons_completed_this_week` / `lessons_completed_this_month` or `xp` + milestones; there is no `lessons_completed_count` in SOT."
+    ],
+    [
+      "S243 - Content But No Social",
+      "squads_joined_count",
+      "Basel: add `squads_joined_count` (number); SOT only has `squad` string."
+    ],
+    [
+      "S240 - Explorer Who Never Creates",
+      "lessons_generated_count",
+      "Basel: add `lessons_generated_count` (number) or proxy via `questions_asked_today`/`questions_asked_this_week` if aligned."
+    ],
+    [
+      "S240 - Explorer Who Never Creates",
+      "worlds_visited_count",
+      "Use `worlds_totals` or specific `world_*_started_lessons` / `world_*_completed_lessons` counts; Basel: add `worlds_visited_count` (number) if you need a single counter."
+    ],
+    [
+      "S233 - Prefers Short Lessons",
+      "avg_lesson_steps_chosen",
+      "Basel: add `avg_lesson_steps_chosen` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S241 - Creator Who Never Explores",
+      "lessons_generated_count",
+      "Basel: add `lessons_generated_count` (number) or proxy via `questions_asked_today`/`questions_asked_this_week` if aligned."
+    ],
+    [
+      "S241 - Creator Who Never Explores",
+      "worlds_visited_count",
+      "Use `worlds_totals` or specific `world_*_started_lessons` / `world_*_completed_lessons` counts; Basel: add `worlds_visited_count` (number) if you need a single counter."
+    ],
+    [
+      "S239 - Text Learner Signal",
+      "photo_generation_count",
+      "Basel: add `photo_generation_count` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S239 - Text Learner Signal",
+      "typed_generation_count",
+      "Basel: add `typed_generation_count` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S239 - Text Learner Signal",
+      "voice_generation_count",
+      "Basel: add `voice_generation_count` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S244 - Competitor But No Creator",
+      "challenges_joined_count",
+      "Basel: add `challenges_joined_count` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S244 - Competitor But No Creator",
+      "lessons_generated_count",
+      "Basel: add `lessons_generated_count` (number) or proxy via `questions_asked_today`/`questions_asked_this_week` if aligned."
+    ],
+    [
+      "S232 - Squad Rank Dropped",
+      "squad_leaderboard_rank_dropped",
+      "Basel: add `squad_leaderboard_rank_dropped` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S231 - New Squad Member Joined",
+      "squad_new_member_today",
+      "Basel: add `squad_new_member_today` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S245 - All-Rounder",
+      "challenges_joined_count",
+      "Basel: add `challenges_joined_count` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S245 - All-Rounder",
+      "lessons_completed_count",
+      "Use `lessons_completed_today` / `lessons_completed_this_week` / `lessons_completed_this_month` or `xp` + milestones; there is no `lessons_completed_count` in SOT."
+    ],
+    [
+      "S245 - All-Rounder",
+      "lessons_generated_count",
+      "Basel: add `lessons_generated_count` (number) or proxy via `questions_asked_today`/`questions_asked_this_week` if aligned."
+    ],
+    [
+      "S245 - All-Rounder",
+      "squads_joined_count",
+      "Basel: add `squads_joined_count` (number); SOT only has `squad` string."
+    ],
+    [
+      "S242 - Social But No Content",
+      "follows_count",
+      "Use `following_count` (SOT name) with the same pattern."
+    ],
+    [
+      "S242 - Social But No Content",
+      "lessons_completed_count",
+      "Use `lessons_completed_today` / `lessons_completed_this_week` / `lessons_completed_this_month` or `xp` + milestones; there is no `lessons_completed_count` in SOT."
+    ],
+    [
+      "S237 - Visual Learner Signal",
+      "photo_generation_count",
+      "Basel: add `photo_generation_count` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S260 - Lesson Used by 5+",
+      "their_lessons_used_by_others",
+      "Basel: add `their_lessons_used_by_others` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S249 - Notification Fatigue Spiral",
+      "notification_dismiss_count_7d",
+      "Basel: add `notification_dismiss_count_7d` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S249 - Notification Fatigue Spiral",
+      "notification_open_rate",
+      "Basel: add `notification_open_rate` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S247 - First Session Only",
+      "days_since_signup",
+      "Use `_created_in_customerio_at` with `timestamp_gt` / `timestamp_lt` offsets (seconds) instead of a counter attribute."
+    ],
+    [
+      "S247 - First Session Only",
+      "total_sessions",
+      "Basel: add `total_sessions` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S259 - Lesson Used by 1 Person",
+      "their_lessons_used_by_others",
+      "Basel: add `their_lessons_used_by_others` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S250 - Used To Generate, Stopped",
+      "days_since_last_active",
+      "Use `last_sign_in_at` with timestamp operators and negative offsets (e.g. inactive 4d: to `timestamp_lt` value `-345600` paired with inverse `from`)."
+    ],
+    [
+      "S250 - Used To Generate, Stopped",
+      "lessons_generated_count",
+      "Basel: add `lessons_generated_count` (number) or proxy via `questions_asked_today`/`questions_asked_this_week` if aligned."
+    ],
+    [
+      "S250 - Used To Generate, Stopped",
+      "lessons_generated_this_week",
+      "Basel: add `lessons_generated_this_week` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S248 - Declining Weekly Sessions",
+      "session_count_dropped",
+      "Basel: add `session_count_dropped` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S251 - Used To Complete, Stopped",
+      "days_since_last_active",
+      "Use `last_sign_in_at` with timestamp operators and negative offsets (e.g. inactive 4d: to `timestamp_lt` value `-345600` paired with inverse `from`)."
+    ],
+    [
+      "S251 - Used To Complete, Stopped",
+      "lessons_completed_count",
+      "Use `lessons_completed_today` / `lessons_completed_this_week` / `lessons_completed_this_month` or `xp` + milestones; there is no `lessons_completed_count` in SOT."
+    ],
+    [
+      "S253 - After-School Slipping Boy",
+      "days_since_last_active",
+      "Use `last_sign_in_at` with timestamp operators and negative offsets (e.g. inactive 4d: to `timestamp_lt` value `-345600` paired with inverse `from`)."
+    ],
+    [
+      "S253 - After-School Slipping Boy",
+      "kid_gender",
+      "Use `gender` with the same eq/to+from pattern (values must match how you store `gender`)."
+    ],
+    [
+      "S253 - After-School Slipping Boy",
+      "most_active_hour",
+      "Basel: add `most_active_hour` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S269 - Won Challenge + No Squad",
+      "last_challenge_result",
+      "Basel: add `last_challenge_result` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S269 - Won Challenge + No Squad",
+      "squads_joined_count",
+      "Basel: add `squads_joined_count` (number); SOT only has `squad` string."
+    ],
+    [
+      "S255 - Weekend Warrior Gone",
+      "days_since_last_active",
+      "Use `last_sign_in_at` with timestamp operators and negative offsets (e.g. inactive 4d: to `timestamp_lt` value `-345600` paired with inverse `from`)."
+    ],
+    [
+      "S255 - Weekend Warrior Gone",
+      "weekend_user",
+      "Basel: add `weekend_user` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S254 - Evening Slipping Girl",
+      "days_since_last_active",
+      "Use `last_sign_in_at` with timestamp operators and negative offsets (e.g. inactive 4d: to `timestamp_lt` value `-345600` paired with inverse `from`)."
+    ],
+    [
+      "S254 - Evening Slipping Girl",
+      "evening_user",
+      "Basel: add `evening_user` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S254 - Evening Slipping Girl",
+      "kid_gender",
+      "Use `gender` with the same eq/to+from pattern (values must match how you store `gender`)."
+    ],
+    [
+      "S262 - Lesson Completed by Others",
+      "their_lessons_completed_by_others",
+      "Basel: add `their_lessons_completed_by_others` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S261 - Lesson Used by 10+",
+      "their_lessons_used_by_others",
+      "Basel: add `their_lessons_used_by_others` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S268 - Lost Challenge + Has Streak",
+      "last_challenge_result",
+      "Basel: add `last_challenge_result` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S267 - Streak Risk + Close to Milestone",
+      "leaderboard_rank_global",
+      "Use `current_leaderboard` / `previous_leaderboard` JSON or per-world `world_*_leaderboard_position`; if global rank is required, Basel: add `leaderboard_rank_global` (number)."
+    ],
+    [
+      "S267 - Streak Risk + Close to Milestone",
+      "streak_at_risk",
+      "Basel: add `streak_at_risk` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S267 - Streak Risk + Close to Milestone",
+      "xp_to_next_level",
+      "Basel: add `xp_to_next_level` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S273 - Struggling + Easy Available",
+      "avg_accuracy",
+      "Basel: add `avg_accuracy` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S273 - Struggling + Easy Available",
+      "preferred_difficulty",
+      "Basel: add `preferred_difficulty` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S277 - Friend Leveled Up + You Didn't",
+      "friend_leveled_up_today",
+      "Basel: add `friend_leveled_up_today` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S277 - Friend Leveled Up + You Didn't",
+      "xp_today",
+      "Basel: add `xp_today` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S279 - Girl Creator in STEM World",
+      "kid_gender",
+      "Use `gender` with the same eq/to+from pattern (values must match how you store `gender`)."
+    ],
+    [
+      "S279 - Girl Creator in STEM World",
+      "last_generated_world",
+      "Use `last_question_generated_world` with the same operator/value pattern."
+    ],
+    [
+      "S275 - Top School + No Squad",
+      "leaderboard_rank_school",
+      "Basel: add `leaderboard_rank_school` (number) or encode rank inside `current_leaderboard` and filter on that."
+    ],
+    [
+      "S275 - Top School + No Squad",
+      "squads_joined_count",
+      "Basel: add `squads_joined_count` (number); SOT only has `squad` string."
+    ],
+    [
+      "S270 - New Follower + Inactive",
+      "days_since_last_active",
+      "Use `last_sign_in_at` with timestamp operators and negative offsets (e.g. inactive 4d: to `timestamp_lt` value `-345600` paired with inverse `from`)."
+    ],
+    [
+      "S270 - New Follower + Inactive",
+      "new_follower_today",
+      "Basel: add `new_follower_today` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S271 - Squad Member Joined + User Inactive",
+      "days_since_last_active",
+      "Use `last_sign_in_at` with timestamp operators and negative offsets (e.g. inactive 4d: to `timestamp_lt` value `-345600` paired with inverse `from`)."
+    ],
+    [
+      "S271 - Squad Member Joined + User Inactive",
+      "squad_new_member_today",
+      "Basel: add `squad_new_member_today` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S274 - Power Creator + No Followers",
+      "lessons_generated_count",
+      "Basel: add `lessons_generated_count` (number) or proxy via `questions_asked_today`/`questions_asked_this_week` if aligned."
+    ],
+    [
+      "S280 - Boy Creator in Arts World",
+      "kid_gender",
+      "Use `gender` with the same eq/to+from pattern (values must match how you store `gender`)."
+    ],
+    [
+      "S280 - Boy Creator in Arts World",
+      "last_generated_world",
+      "Use `last_question_generated_world` with the same operator/value pattern."
+    ],
+    [
+      "S276 - 4-Day Gap + Abandoned Lesson",
+      "abandoned_lesson_progress",
+      "Basel: add `abandoned_lesson_progress` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S276 - 4-Day Gap + Abandoned Lesson",
+      "days_since_last_active",
+      "Use `last_sign_in_at` with timestamp operators and negative offsets (e.g. inactive 4d: to `timestamp_lt` value `-345600` paired with inverse `from`)."
+    ],
+    [
+      "S278 - Daily Limit Hit + Shared Lesson",
+      "daily_limit_hit",
+      "Basel: add `daily_limit_hit` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S278 - Daily Limit Hit + Shared Lesson",
+      "lessons_shared_today",
+      "Basel: add `lessons_shared_today` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S252 - Uninstall Risk",
+      "notification_dismiss_count_7d",
+      "Basel: add `notification_dismiss_count_7d` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S252 - Uninstall Risk",
+      "notification_open_rate",
+      "Basel: add `notification_open_rate` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ],
+    [
+      "S252 - Uninstall Risk",
+      "session_count_dropped",
+      "Basel: add `session_count_dropped` with the correct type and sync it from backend, or replace with the closest SOT attribute."
+    ]
+  ]
+}
