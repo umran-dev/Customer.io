@@ -43,6 +43,20 @@ graph TD
 
 No additional **campaign-level audience** filter is required by the diagram; the first branch applies the only entry filter on `onboarded`.
 
+### Live journey (Customer.io EU)
+
+A draft campaign was created in the connected workspace so the graph matches this spec:
+
+| Field | Value |
+|--------|--------|
+| **Environment** | `218062` (EU) |
+| **Campaign ID** | `17` |
+| **Campaign name** | GetXplain Welcome Journey (Mermaid) |
+| **Trigger event** | `signed_in` (only join-adjacent event present in the workspace at creation time; switch the campaign trigger if you add a dedicated “user joined” event). |
+| **State** | Draft — finish push copy, review branches, then activate in the UI. |
+
+Open **Journeys → Campaigns** in Customer.io for that workspace and search for the campaign name above.
+
 ---
 
 ## Builder map (node → action)
